@@ -97,7 +97,29 @@ The constructor of a class is a method with the reserved name constructor . You 
 ## OOP Principles
 
 The principles of Object oriented languages are:
-### ENCAPSULATION
-Encapsulation is the principle of information hiding.The ability to concentrate in one entity both data
-(properties) and functions (methods), hiding the internal details.
 
+### ENCAPSULATION
+Encapsulation is the principle of information hiding.The ability to concentrate in one entity both data(properties) and functions (methods), hiding the internal details.
+In other words, the encapsulation principle allows an object to expose just what is needed touse it, hiding the complexity of its implementation.
+Example: we drive cars. We need just to know how to speed up,brake, and change direction. We do not need to know how the car works in detail, how itsmotor burns fuel or transmits movement to the wheels.
+Another	aspect	of	information	hiding	is	the	visibility	of	methods	and	properties.	In	some languages,	objects	can	have	 public ,	 private ,	and	 protected 	methods	and	properties.	This categorization	defines	the	level	of	access	the	users	of	the	object	have.	For	example,	only	the methods	of	the	same	object	have	access	to	the	 private 	methods,	while	anyone	has	access	to	the public 	ones.	In	JavaScript,	all	methods	and	properties	are	 public ,	but	we'll	see	that	there	are ways	to	protect	the	data inside	an	object	and	achieve	privacy.
+
+Approaches to implement the visibility and accessibility of members of a JavaScript object:
+1. **Public and  Private Properties**.
+Many object-oriented languages, such as Java and C#, provide specific keywords such as public and private (access modifiers) to allow developers to easily implement the Information Hiding principle. JavaScript does not include such keywords. All members in
+an object are public by default.However, some common patterns can be used to obtain different levels of information hiding as happens in most classical OOP languages.
+JavaScript objects do not care about privacy. All the properties and methods are publicly
+accessible if no caution is taken. So, if we want to avoid access to some properties or
+methods concerning internal implementation details, we have to set up a strategy.
+
+2. **Scope and Closure**.
+
+### INHERITANCE
+
+Inheritance	is	an elegant	way	to	reuse	existing	code.It enables new objects to acquire the properties of existing objects.
+In	classical	OOP, classes	inherit	from	other	classes,	but	in	JavaScript,	as	there	are	no	classes, objects	inherit	from	other	objects.
+
+### POLYMORPHISM
+
+The ability to call the same	method	on different	objects, and	have each	of	them	respond	in	their	own	way,	is	called polymorphism.
+In most languages, overloading is what happens when you have two methods with the same name but different signatures.
